@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <br><h1> Form With OTP</h1>
+<form method="POST" class="register-form" id="create-form">
+  
+<br>Name:           <input type="text" name="name" id="full_name" placeholder="Your Name" required/>
+  
+<br>Phone Number:   <input type="tel" name="your_phone" id="phone" placeholder="Your Phone Number" value="+91"   pattern="[+]{1}[9]{1}[1]{1}[6-9]{1}[0-9]{9}" class="input-text" title="Please verify the Phone Number or Enter the Country Code" required>
+                    <span class="fa fa-stack fa-lg" id="ve" style="display: none;">
+                    <i class="fa fa-certificate fa-stack-1x" style="font-size:25px;color: green" ></i>
+                    <i class="fa fa-check fa-stack-1x fa-inverse" style="font-size:13px"></i>
+                    </span>
+                    <div id="recaptcha-container" ></div>
+                    <button id="myBtn">Send code</button>
+  
+<br>Place:          <div  class="autocomplete">
+                        <input type="text"   placeholder="Drop Location" id="place" required>
+                    </div> 
+  
+<br>DOB:            <input type="date" placeholder="01/01/2020" id="Date" required>
+  
+<br>Message:        <input type="text" placeholder="Type Your Message" id="msg" required>
+
+<br>                <input type="submit" name="submit" id="submit" onclick="teleBot()"  value="submit"/>
+                                                             
+</form>
+  
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="wrapper">
+      <div id="dialog">
+        <h3>Please enter the 6-digit verification code we sent via SMS:</h3>
+        <div id="form">
+         <input type="text" id="verificationCode" placeholder="Enter verification code" class="input-text" required>
+        </div>
+        <button class="btn btn-primary btn-embossed" onclick="codeverify()">Verify</button>
+
+        <div>
+          Note: <b>Enter the phone Number With Country Code Eg: +919791597993 And Also You check the Captcha is verfied Then only You Get OTP</b>
+          Didn't receive the code?<br/>
+          <button id="myBtc">Send code again</button><br />
+          <a onclick="myFunctio()" style="color: red;">Change phone number</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+<script src="Telegram.js"></script> 
+<script src="popmodel.js"></script> 
+<script src="firebase.js"></script>  
+<script src="phoneauth.js"></script>  
+<script src="form.js"></script>
+<script src="auto.js"></script>
+</body>
+</html>
