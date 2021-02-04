@@ -6,6 +6,7 @@
         var strText4 = document.getElementById("msg").value;
         var y = document.getElementById("ve");
         var result = '%0AName:  '+strText + '%0ANumber: ' + strText1+'%0APlace: ' + strText2+'%0ADate: ' + strText3+'%0AMessage: ' + strText4;
+        var result1 = '<br/>Name:  '+strText + '<br/>Number: ' + strText1+'<br/>Place: ' + strText2+'<br/>Date: ' + strText3+'<br/>Message: ' + strText4;
         var finalMsg = encodeURI(result);
         document.getElementById("create-form").addEventListener("submit", (e) => {
         e.preventDefault();
@@ -36,9 +37,9 @@ Email.send({
 Host:"smtp.gmail.com",
 Username:'hkarthikraj01@gmail.com',
 Password:'jyiawuyopqwlwxjs',
-To: 'hkarthikraj01@gmail.com',
+To: 'khkvkas@gmail.com',
 From: 'hkarthikraj01@gmail.com',
-Subject: 'hi',
+Subject: 'New Booking',
 Body:'Name'+result,
 }).then((message)=>alert("Sent.."));
 }
