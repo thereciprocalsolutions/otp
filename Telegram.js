@@ -39,7 +39,7 @@ Password:'jyiawuyopqwlwxjs',
 To: 'hkarthikraj01@gmail.com',
 From: 'hkarthikraj01@gmail.com',
 Subject: 'hi',
-Body:'Name'+a,
+Body:'Name'+result,
 }).then((message)=>alert("Sent.."));
 }
         }); 
