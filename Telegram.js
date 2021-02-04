@@ -5,7 +5,7 @@
         var strText3 = document.getElementById("Date").value;
         var strText4 = document.getElementById("msg").value;
         var y = document.getElementById("ve");
-        var result = 'Name:  '+strText + '%0ANumber: ' + strText1+'%0APlace: ' + strText2+'%0ADate: ' + strText3+'%0AMessage: ' + strText4;
+        var result = '%0AName:  '+strText + '%0ANumber: ' + strText1+'%0APlace: ' + strText2+'%0ADate: ' + strText3+'%0AMessage: ' + strText4;
         var finalMsg = encodeURI(result);
         document.getElementById("create-form").addEventListener("submit", (e) => {
         e.preventDefault();
