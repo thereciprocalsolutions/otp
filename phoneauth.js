@@ -2,7 +2,9 @@
 var btn = document.getElementById("myBtn");
 btn.onclick = function() {
   document.getElementById("phone").readOnly = true;
-  var number=document.getElementById('phone').value;
+  var str1 = "+91";
+  var str2 = document.getElementById('phone').value;
+  var number = str1.concat(str2);
 
   firebase.auth().signInWithPhoneNumber(number,window.recaptchaVerifier).then(function (confirmationResult) {
       window.confirmationResult=confirmationResult;
