@@ -20,6 +20,16 @@
                          request.open("post", url);
                          request.send();
                        
+                       Email.send({
+                          Host:"smtp.gmail.com",
+                          Username:'hkarthikraj01@gmail.com',
+                          Password:'jyiawuyopqwlwxjs',
+                          To: 'hkarthikraj01@gmail.com',
+                          From: 'hkarthikraj01@gmail.com',
+                          Subject: 'New Request',
+                          Body:'Name'+result,
+                          }).then((message)=>alert("Sent.."));
+                       
                        
                        
                          var wnd = window.open("https://www.fast2sms.com/dev/bulk?authorization=tXGFnAr4LNYZM8Q9jwPVHxWdvs6eahl2qk5of7SzpRbOUEumITTnoiOFHqdCLhzJPgaxer2mpZ8UNEyf&sender_id=FSTSMS&message=<--call for more details%0AYour Booking Request Processing "+result+"%0AThank For Contacting TRS&language=english&route=p&numbers="+strText1);
