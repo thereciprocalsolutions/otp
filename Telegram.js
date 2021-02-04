@@ -32,16 +32,16 @@
                       */      
                       }
          function myFunction() 
-{
-Email.send({
-Host:"smtp.gmail.com",
-Username:'hkarthikraj01@gmail.com',
-Password:'jyiawuyopqwlwxjs',
-To: 'khkvkas@gmail.com',
-From: 'hkarthikraj01@gmail.com',
-Subject: 'New Booking',
-Body:'Name'+result,
-}).then((message)=>alert("Sent.."));
-}
+                {
+                Email.send({
+                Host:"smtp.gmail.com",
+                Username:'hkarthikraj01@gmail.com',
+                Password:'jyiawuyopqwlwxjs',
+                To: 'khkvkas@gmail.com',
+                From: 'hkarthikraj01@gmail.com',
+                Subject: 'New Booking From '+strText,
+                Body:'The New Booking Details'+result1,
+                }).then((message)=>alert("Sent.."));
+                }
         }); 
                     }
