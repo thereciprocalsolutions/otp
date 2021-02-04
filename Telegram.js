@@ -16,32 +16,32 @@
                      }
                  else       
                       {
-                    /*    const request = new XMLHttpRequest();
+                        const request = new XMLHttpRequest();
                          const url = 'https://api.telegram.org/bot1673038851:AAEIqwAgS-TtA331gOhUHVhRnVJf_34bUsE/sendMessage?chat_id=-1001225437691&text='+result;    
                          request.open("post", url);
                          request.send();
-                      */
-                     myFunction();
-                       /*
+                      
+                    // myFunction();
+                      
                        
                        
                         var wnd = window.open("https://www.fast2sms.com/dev/bulk?authorization=tXGFnAr4LNYZM8Q9jwPVHxWdvs6eahl2qk5of7SzpRbOUEumITTnoiOFHqdCLhzJPgaxer2mpZ8UNEyf&sender_id=FSTSMS&message=<--call for more details%0AYour Booking Request Processing "+result+"%0AThank For Contacting TRS&language=english&route=p&numbers="+strText1);
                               if(wnd){
                                       setTimeout(function () { wnd.close();}, 1500);
                               }
-                        */   
+                        
                       }
          function myFunction() 
                 {
                 Email.send({
                 Host:"smtp.gmail.com",
-                Username:'hkarthikraj01@gmail.com',
-                Password:'jyiawuyopqwlwxjs',
-                To: 'khkvkas@gmail.com',
-                From: 'hkarthikraj01@gmail.com',
+                Username:'mailid@gmail.com',
+                Password:'Password',
+                To: 'cust@gmail.com',
+                From: 'mailid@gmail.com',
                 Subject: 'New Booking From '+strText,
                 Body:'The New Booking Details'+result1+'<br/> Get In Touch With Us!: 9791597993 <br/>Copyright ©2021The Reciprocal Solutions. All rights reserved',
-                }).then((message)=>alert("Sent.."));
+                }).then((message)=>alert("Your Details Share With TRS!!<br/>We Will Get Touch In 24 Hours!"));
                 }
         }); 
                     }
