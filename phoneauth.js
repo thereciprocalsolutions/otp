@@ -6,6 +6,7 @@ btn.onclick = function() {
   var str2 = document.getElementById('phone').value;
   var number = str1.concat(str2);
 
+  
   firebase.auth().signInWithPhoneNumber(number,window.recaptchaVerifier).then(function (confirmationResult) {
       window.confirmationResult=confirmationResult;
       coderesult=confirmationResult;
