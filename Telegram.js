@@ -20,15 +20,7 @@
                          request.open("post", url);
                          request.send();
                     */   
-                       Email.send({
-                          Host:"smtp.gmail.com",
-                          Username:'hkarthikraj01@gmail.com',
-                          Password:'jyiawuyopqwlwxjs',
-                          To: 'hkarthikraj01@gmail.com',
-                          From: 'hkarthikraj01@gmail.com',
-                          Subject: 'New Request',
-                          Body:'Name'+result,
-                          }).then((message)=>alert("Sent.."));
+                      myFunction();
                        
                        
                        
@@ -38,5 +30,17 @@
                               }
                       */      
                       }
+         function myFunction() 
+{
+Email.send({
+Host:"smtp.gmail.com",
+Username:'hkarthikraj01@gmail.com',
+Password:'jyiawuyopqwlwxjs',
+To: 'hkarthikraj01@gmail.com',
+From: 'hkarthikraj01@gmail.com',
+Subject: 'hi',
+Body:'Name'+a,
+}).then((message)=>alert("Sent.."));
+}
         }); 
                     }
