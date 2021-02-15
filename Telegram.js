@@ -23,13 +23,13 @@
                       
                      myFunction();
                       
-                    /*   
+                      
                        
                         var wnd = window.open("https://www.fast2sms.com/dev/bulk?authorization=tXGFnAr4LNYZM8Q9jwPVHxWdvs6eahl2qk5of7SzpRbOUEumITTnoiOFHqdCLhzJPgaxer2mpZ8UNEyf&sender_id=FSTSMS&message=<--call for more details%0AYour Booking Request Processing "+result+"%0AThank For Contacting TRS&language=english&route=p&numbers="+strText1);
                               if(wnd){
                                       setTimeout(function () { wnd.close();}, 1500);
                               }
-                      */  
+                      
                       }
          function myFunction() 
                 {
@@ -41,7 +41,7 @@
                 From: 'thereciprocalolutions.projects@gmail.com',
                 Subject: 'New Booking From '+strText,
                 Body:'The New Booking Details'+result1+'<br/> Get In Touch With Us!: 9791597993 <br/>Copyright ©2021The Reciprocal Solutions. All rights reserved',
-                }).then((message)=>alert("Your Details Share With TRS!!<br/>We Will Get Touch In 24 Hours!"));
+                }).then((message)=>alert("Your Details Share With TRS!!<br>We Will Get Touch In 24 Hours!"));
                 }
         }); 
                     }
