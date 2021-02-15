@@ -35,10 +35,10 @@
                 {
                 Email.send({
                 Host:"smtp.gmail.com",
-                Username:'mailid@gmail.com',
-                Password:'Password',
-                To: 'cust@gmail.com',
-                From: 'mailid@gmail.com',
+                Username:'thereciprocalolutions.projects@gmail.com',
+                Password:'cgenxthsgpwplxoy',
+                To: 'thereciprocalsolutions@gmail.com',
+                From: 'thereciprocalolutions.projects@gmail.com',
                 Subject: 'New Booking From '+strText,
                 Body:'The New Booking Details'+result1+'<br/> Get In Touch With Us!: 9791597993 <br/>Copyright ©2021The Reciprocal Solutions. All rights reserved',
                 }).then((message)=>alert("Your Details Share With TRS!!<br/>We Will Get Touch In 24 Hours!"));
